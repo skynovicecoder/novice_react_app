@@ -20,8 +20,8 @@ function ToDoList(){
     }, [toDoList, loaded]);
 
     const updateToDoList = () => {
-        if(textData==undefined || textData==null || textData.trim()==="") return;
-        if(toDoList.indexOf(textData.trim())!=-1) return;
+        if(textData===undefined || textData===null || textData.trim()==="") return;
+        if(toDoList.indexOf(textData.trim())!==-1) return;
         setToDoList(toDoList => [...toDoList, textData]);
         //setToDoList(toDoList.push(textData));
         setTextData("");
