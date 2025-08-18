@@ -11,6 +11,10 @@ const decrementCount = () =>{
     setCounter(count-1);
 }
 
+const restCount = () =>{
+    setCounter(0);
+}
+
 return(
     <div>
         <div>
@@ -25,6 +29,11 @@ return(
     
         <button onClick={()=>decrementCount()}>
             Remove Me "-"
+        </button>
+    </div>
+    <div>
+        <button onClick={() => restCount()}>
+            Reset
         </button>
     </div>
     </div>
